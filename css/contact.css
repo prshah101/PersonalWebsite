@@ -1,0 +1,42 @@
+.contact-section {
+    max-width: 80vw;           /* keeps content from stretching too wide */
+    margin: 5vh auto;          /* vertical spacing and center horizontally */
+    padding: 3vh 2vw;          /* internal spacing */
+    text-align: center;        /* center all text */
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* optional light background */
+    border-radius: 1vw;        /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.contact-section h1 {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+    color: #333;
+}
+
+.contact-section h2 {
+    font-size: 1.5vw;
+    margin: 1vh 0;
+    color: #555;
+}
+
+.contact-section a {
+    color: #0077cc;           /* LinkedIn link color */
+    text-decoration: none;     /* remove underline */
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+    color: #005fa3;            /* darker on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section h1 {
+        font-size: 6vw;
+    }
+    .contact-section h2 {
+        font-size: 4vw;
+    }
+}
