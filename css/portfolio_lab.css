@@ -29,3 +29,57 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
     margin-bottom: 3vh;
 }
+
+/* Grid container */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 2vw; /* space between grid items */
+    margin-top: 3vh;
+}
+
+/* Each app card */
+.app {
+    text-align: center;
+}
+
+/* Images */
+.app img {
+    width: 100%;        /* fill the column width */
+    height: auto;       /* keep aspect ratio */
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s; /* for hover effect */
+}
+
+/* Image hover effect */
+.app img:hover {
+    transform: scale(1.05);
+}
+
+/* Titles */
+.app h3 {
+    margin-top: 1vh;
+    font-size: 1.2vw;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller screens */
+    }
+    .app h3 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .apps-grid {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+    .app h3 {
+        font-size: 4vw;
+    }
+}
+
