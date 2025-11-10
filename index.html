@@ -1,212 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            font-family: "Arial", sans-serif; 
-        }
-
-        ul {
-          list-style-type: none;
-          overflow: hidden;
-          background-color: #ffffff;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          padding: 8px;
-          background-color: #fffcfc;
-          text-decoration: none;
-        }
-        
-        .header-image {
-            width: 100%;
-            height: 50vh;
-            background-position: center;
-            background-size: cover;
-            background-image: url("creative.png");
-            margin-bottom: 4vh;
-        }
-
-        .overlay {
-            width: 100%;
-            height: 50vh;
-            position: absolute;
-            background-color: rgba(0,0,0,0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 2rem; /* Adjust the font size */
-            opacity: 0;
-        }
-
-        /* When the cruser is hovering over the image, display the text*/
-        .header-image:hover .overlay {
-            opacity: 1;
-        }
-
-        /* Turn the profile image into a circle */
-        .profile-container{
-        width: 40vh; 
-        height: 40vh; 
-        border-radius: 50%; 
-        overflow: hidden; 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-
-        /* Style the image inside the container */
-        .profile-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        }
-
-        /* Style the content of the profile */
-        .profile-details{
-            color:rgb(5, 68, 169);
-            position: relative;
-        }
-        
-        .detail{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 15px
-        }
-
-        .horizontal-line {
-            border-top: 0.2vw solid rgb(5, 68, 169); 
-            width: 50%;
-        }
-
-        /* Styling Projects */
-
-        .projects {
-            position: absolute;
-            left: 30vw;
-        }
-
-        .project{
-            padding: 3rem; 
-        }
-
-        .project img{
-            width: 22vw;
-            height: auto;
-            float: left;
-            border-radius: 2vw; 
-            overflow: hidden; 
-            padding: 3vh; 
-        }
-
-        .project-details {
-            margin-top: 11vh;
-            float: right;
-        }
-
-        .project-details a {
-            font-size: 1vw;
-        }
-
-        .detail2{
-            position: absolute;
-            top: 125vh;
-            left: 45vw;
-        }
-
-        .horizontal-line2 {
-            border-top: 0.2vw solid rgb(5, 68, 169); 
-            width: 50%;
-            position: absolute;
-            top: 115vh;
-            left: 23vw;
-            margin: 3vw;
-        }
-
-        /* Organising the gallery */
-        .gallery{
-            position: absolute;
-            left: 40vw;
-            top: 230vh;
-            align-items: center;
-        }
-
-        .gallery a {
-            margin-bottom: 2vw; /* add margin after each link */
-            display: block; 
-        }
-
-        </style>
-        </head>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
+    <nav class="navbar">
+        <div class="nav-items">
+            <h3><a href="index.html">Home</a></h3>
+            <h3><a href="pages/portfolio.html">Portfolio</a></h3>
+            <!-- <h3><a href="pages/skills.html">Skills</a></h3>
+            <h3><a href="pages/certifications.html">Certifications</a></h3> -->
+            <h3><a href="pages/references.html">References</a></h3>
+            <!-- <h3><a href="pages/contact.html">Contact</a></h3> -->
+        </div>
+    </nav>
+
     <div class="header-image">
-        <div class="overlay">
-            <p>Hi, I’m Prina</p>
+        <div class="profile-container">
+            <img src="images/profile.png">
         </div>
     </div>
 
-    <div class = "profile-container">
-        <img src="profile.png">
-    </div>
-
-    
-    <div class = "profile-details">
-        <div class = "detail">
-            <p style="font-size: 1.5vw;">I am a CS student at Deakin University and am based in Melbourne, Australia.</p>
+    <div class="profile-details">
+        <div class="detail">
+            <p style="font-size: 1.5vw;">Hi, I'm Prina. I'm an IT engineer based in Canberra, Australia.</p>
         </div>
-        <div class = "detail">
-            <p style="font-size: 1.5vw;"> My interests include application development and data analysis.</p>
+        <div class="detail">
+            <p style="font-size: 1.5vw;"> I specialise in systems engineering. I've got ~2 years of experience working
+                in tech</p>
         </div>
-        <div class = "detail"><div class="horizontal-line"></div></div>
-        <div class = "detail"> <p style="font-size: 2vw;">Here's some projects I've worked on so far</p> </div>
-        
-        <div class = "projects">
-            <div class = "project">
-                <img src = "project1.jpg"> 
-                <div class = "project-details"> 
-                    <h2 style="font-size: 1.5vw;">Responsive Website</h2>  
-                    <p style="font-size: 1vw;"> Created a website about 'Self Improvement'. </p>
-                    <a href= "https://github.com/prshah101/vueAppSelfDevBlog" download>GitHub Repo Link</a>
-                </div>
-            </div> 
-            <div class = "project">
-                <img src = "project2.jpg">
-                <div class = "project-details"> 
-                    <h2 style="font-size: 1.5vw;">Power BI Dashboard</h2> 
-                    <p style="font-size: 1vw;"> This dashboard contained historical data. </p>
-                    <a href= "https://www.dropbox.com/scl/fi/d3xox6qpy860p8ymi93db/PROJECT-WORKFLOW.pdf?rlkey=vv311fyl4m1zgicm2sijg485n&dl=0" download>Project Workflow PDF</a>
-
-                </div>
-            </div>
+        <div class="detail">
+            <p style="font-size: 1.5vw;">I’ve got industry experience across government, private, and not-for-profit
+                sectors.</p>
         </div>
-
-        <div class="horizontal-line2"></div>
-        <div class = "detail2"> <p style="font-size: 2vw;">My References</p> </div>
-    </div>
-
-    
-    <div class="gallery">
-        <p>Reference letter from my EWOV Internship:</p>
-        <a href= "https://www.dropbox.com/scl/fi/7d2yh9pt3pmgxi3cno9r6/ewovref.pdf?rlkey=5jz7zmj93bm3phih3f5u6cg8q&dl=0" download>Here</a>
-        
-        <p>Reference letter from my Deloitte Internship:</p>
-        <a href= "https://www.dropbox.com/scl/fi/0xdova9y0iw2e4zu5czqd/deloitteref.pdf?rlkey=k34pceue5ca3xuf25kkndfpex&dl=0" download>Here</a>
-
-        <p>My Up-to-Date Resume:</p>
-        <a href= 'https://www.dropbox.com/scl/fi/wsbdv1hcalns5y8dwdpst/Prina-Shahi-Graduate-Resume-v2.pdf?rlkey=tdrvst1p0cizex7k2yl90sd78&dl=0' download>Here</a>
     </div>
 </body>
+
 </html>

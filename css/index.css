@@ -1,0 +1,103 @@
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Arial", sans-serif; 
+        }
+
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          background-color: #ffffff;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          padding: 8px;
+          background-color: #fffcfc;
+          text-decoration: none;
+        }
+        
+        .header-image {
+            width: 100%;
+            height: 50vh;
+            background-position: center;
+            background-size: cover;
+            background-image: url("../images/creative.png");
+            margin-bottom: 4vh;
+            padding-top: 10vh;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 50vh;
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem; /* Adjust the font size */
+            opacity: 0;
+        }
+
+        /* When the cruser is hovering over the image, display the text*/
+        .header-image:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Turn the profile image into a circle */
+        .profile-container{
+        width: 40vh; 
+        height: 40vh; 
+        border-radius: 50%; 
+        overflow: hidden; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        /* Style the image inside the container */
+        .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        }
+
+        /* Style the content of the profile */
+        .profile-details{
+            color:rgb(5, 68, 169);
+            position: relative;
+        }
+        
+        .detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px
+        }
+
+        .horizontal-line {
+            border-top: 0.2vw solid rgb(5, 68, 169); 
+            width: 50%;
+        }
+
+
+        .horizontal-line2 {
+            border-top: 0.2vw solid rgb(5, 68, 169); 
+            width: 50%;
+            position: absolute;
+            top: 115vh;
+            left: 23vw;
+            margin: 3vw;
+        }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+

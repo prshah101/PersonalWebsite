@@ -1,0 +1,17 @@
+        .detail2{
+            position: absolute;
+            top: 125vh;
+            left: 45vw;
+        }
+
+                /* Organising the gallery */
+        .gallery{
+            position: absolute;
+            left: 40vw;
+            align-items: center;
+        }
+
+        .gallery a {
+            margin-bottom: 2vw; /* add margin after each link */
+            display: block; 
+        }
