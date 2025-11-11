@@ -1,6 +1,12 @@
+/* Reset body spacing to remove unwanted white space */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Navbar container */
 .navbar {
-  background-color: #1e1e2f;
+  background-color: #130F25;
   padding: 15px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -16,9 +22,9 @@
 .nav-items h3 {
   color: #ffffff;
   margin: 0;
-  font-size: 18px;
+  font-size: clamp(16px, 2.5vh, 24px);
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
+  font-family: "Arial", sans-serif; 
 }
 
 .nav-items h3 a {
@@ -33,7 +39,7 @@
   transform: translateY(-2px);
 }
 
-/* Responsive behavior */
+/* Responsive behavior when screen is smaller*/
 @media (max-width: 600px) {
   .nav-items {
     flex-direction: column;

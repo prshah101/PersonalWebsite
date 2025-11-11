@@ -1,28 +1,26 @@
-        /* Styling Projects */
+.projects {
+    position: absolute;
+    left: 30vw;
+}
 
-        .projects {
-            position: absolute;
-            left: 30vw;
-        }
+.project{
+    padding: 3rem; 
+}
 
-        .project{
-            padding: 3rem; 
-        }
+.project img{
+    width: 22vw;
+    height: auto;
+    float: left;
+    border-radius: 2vw; 
+    overflow: hidden; 
+    padding: 3vh; 
+}
 
-        .project img{
-            width: 22vw;
-            height: auto;
-            float: left;
-            border-radius: 2vw; 
-            overflow: hidden; 
-            padding: 3vh; 
-        }
+.project-details {
+    margin-top: 11vh;
+    float: right;
+}
 
-        .project-details {
-            margin-top: 11vh;
-            float: right;
-        }
-
-        .project-details a {
-            font-size: 1vw;
-        }
+.project-details a {
+    font-size: 1vw;
+}
