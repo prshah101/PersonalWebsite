@@ -1,26 +1,49 @@
 .projects {
-    position: absolute;
-    left: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem; 
+    margin-top: 3rem;
+    font-family: "Arial", sans-serif;
 }
 
-.project{
-    padding: 3rem; 
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.project img{
-    width: 22vw;
+.project img {
+    width: 45%;
     height: auto;
-    float: left;
-    border-radius: 2vw; 
-    overflow: hidden; 
-    padding: 3vh; 
+    border-radius: 1rem;
 }
 
 .project-details {
-    margin-top: 11vh;
-    float: right;
+    width: 50%;
+}
+
+.project-details h2 {
+    font-size: 1.5vw;
+    margin-bottom: 0.5rem;
+}
+
+.project-details p {
+    font-size: 1vw;
+    margin-bottom: 1rem;
 }
 
 .project-details a {
     font-size: 1vw;
+    color: #F15042;
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
 }

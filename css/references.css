@@ -1,17 +1,68 @@
-        .detail2{
-            position: absolute;
-            top: 125vh;
-            left: 45vw;
-        }
+.detail2 {
+    text-align: center;
+    margin-top: 8rem;
+    font-family: "Arial", sans-serif; 
+}
 
-                /* Organising the gallery */
-        .gallery{
-            position: absolute;
-            left: 40vw;
-            align-items: center;
-        }
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    font-size: 1.1vw;
+}
 
-        .gallery a {
-            margin-bottom: 2vw; /* add margin after each link */
-            display: block; 
-        }
+.gallery p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.gallery a {
+    margin-left: 0.5ch; /* small space after the colon */
+    color: #F15042;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.gallery a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .gallery {
+        font-size: 3vw;
+    }
+}
+
+
+/* For work experience */
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* align text at the top */
+  margin-bottom: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 1vw;
+}
+
+.experience-item .left {
+  max-width: 65%;
+  line-height: 1.3;
+}
+
+.experience-item .left strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.experience-item .right {
+  max-width: 30%;
+  text-align: right;
+  color: #555;
+  white-space: nowrap; /* keep date on one line */
+}
