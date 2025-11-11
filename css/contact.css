@@ -1,12 +1,12 @@
 .contact-section {
-    max-width: 80vw;           /* keeps content from stretching too wide */
-    margin: 5vh auto;          /* vertical spacing and center horizontally */
-    padding: 3vh 2vw;          /* internal spacing */
-    text-align: center;        /* center all text */
+    max-width: 80vw;           
+    margin: 5vh auto;          
+    padding: 3vh 2vw;         
+    text-align: center;       
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* optional light background */
-    border-radius: 1vw;        /* rounded corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+    background-color: #f9f9f9;
+    border-radius: 1vw;       
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
 }
 
 .contact-section h1 {
@@ -22,13 +22,13 @@
 }
 
 .contact-section a {
-    color: #0077cc;           /* LinkedIn link color */
-    text-decoration: none;     /* remove underline */
+    color: #0077cc;          
+    text-decoration: none;     
 }
 
 .contact-section a:hover {
     text-decoration: underline;
-    color: #005fa3;            /* darker on hover */
+    color: #005fa3;            
 }
 
 /* Responsive adjustments */
