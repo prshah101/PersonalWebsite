@@ -1,0 +1,79 @@
+.lab_content {
+    max-width: 90vw;       /* keeps content from stretching too wide */
+    margin: 5vh auto;      /* vertical spacing and center horizontally */
+    padding: 2vh 2vw;      /* internal spacing */
+    text-align: center;    /* center headings and image */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.lab_content h1 {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+}
+
+.lab_content h2 {
+    font-size: 2vw;
+    margin-top: 4vh;
+}
+
+.lab_content p {
+    font-size: 1.2vw;
+    margin-bottom: 3vh;
+}
+
+.lab_content img {
+    width: 30vw;           /* smaller image */
+    height: auto;          /* maintain aspect ratio */
+    border-radius: 1vw;    /* optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+    margin-bottom: 3vh;
+}
+
+/* Grid container */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 2vw; /* space between grid items */
+    margin-top: 3vh;
+}
+
+/* Each app card */
+.app {
+    text-align: center;
+}
+
+/* Images */
+.app img {
+    width: 100%;        /* fill the column width */
+    height: auto;       /* keep aspect ratio */
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Titles */
+.app h3 {
+    margin-top: 1vh;
+    font-size: 1.2vw;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller screens */
+    }
+    .app h3 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .apps-grid {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+    .app h3 {
+        font-size: 4vw;
+    }
+}
+

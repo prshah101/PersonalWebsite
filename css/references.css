@@ -1,17 +1,46 @@
-        .detail2{
-            position: absolute;
-            top: 125vh;
-            left: 45vw;
-        }
+.detail2 {
+    text-align: center;
+    margin-top: 8rem;
+    font-family: "Arial", sans-serif; 
+}
 
-                /* Organising the gallery */
-        .gallery{
-            position: absolute;
-            left: 40vw;
-            align-items: center;
-        }
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    font-size: 1.1vw;
+}
 
-        .gallery a {
-            margin-bottom: 2vw; /* add margin after each link */
-            display: block; 
-        }
+.gallery p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.gallery a {
+    margin-left: 0.5ch; 
+    color: #F15042;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.gallery a:hover {
+    text-decoration: underline;
+}
+
+.gallery img {
+    width: 50vw;
+    height: auto;
+    display: block; /* prevents inline gap */
+    margin-bottom: 5vh;
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .gallery {
+        font-size: 3vw;
+    }
+}

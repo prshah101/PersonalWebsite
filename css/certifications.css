@@ -1,0 +1,55 @@
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cert-item {
+    position: relative;
+    text-align: center;
+}
+
+/* Hide images by default */
+.cert-img {
+    display: none;
+    position: absolute;
+    top: 100%;           /* position below the title */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;        /* adjust size */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Show image on hover over title */
+.cert-name:hover + .cert-img {
+    display: block;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.filter-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #296890;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: #388AA5;
+}
+
+.cert-name a {
+  text-decoration: none; 
+  color: inherit;        
+}
