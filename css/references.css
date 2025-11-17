@@ -29,6 +29,14 @@
     text-decoration: underline;
 }
 
+.gallery img {
+    width: 50vw;
+    height: auto;
+    display: block; /* prevents inline gap */
+    margin-bottom: 5vh;
+}
+
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {

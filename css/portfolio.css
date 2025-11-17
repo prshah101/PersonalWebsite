@@ -7,6 +7,17 @@
     font-family: "Arial", sans-serif;
 }
 
+.intro {
+    text-align: center;
+    margin-bottom: -5vh;
+}
+
+.intro h1,
+.intro p {
+    margin: 1rem 0;  
+}
+
+
 .project {
     display: flex;
     align-items: center;
