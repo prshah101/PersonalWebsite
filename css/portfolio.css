@@ -2,9 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem; 
+    gap: 4rem;
     margin-top: 3rem;
     font-family: "Arial", sans-serif;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .intro {
@@ -14,7 +27,7 @@
 
 .intro h1,
 .intro p {
-    margin: 1rem 0;  
+    margin: 1rem 0;
 }
 
 
@@ -26,7 +39,7 @@
     background-color: #fff;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project img {
